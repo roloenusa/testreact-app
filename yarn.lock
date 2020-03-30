@@ -8639,6 +8639,7 @@ fsevents@^1.2.7:
     react: ^16.13.1
     react-dom: ^16.13.1
     react-scripts: 3.4.1
+    speak-tts: ^2.0.8
   languageName: unknown
   linkType: soft
 
@@ -12510,6 +12511,13 @@ resolve@1.1.7:
     select-hose: ^2.0.0
     spdy-transport: ^3.0.0
   checksum: 2/a4bfb5aad131810b87f5c3cacbc57a6929f53b351c92e10f8278b6d662fa5e971e31ae3f77f6b11f8faf4978a58bc7891612a11cadaf8df1b3fd59dd15b333b5
+  languageName: node
+  linkType: hard
+
+"speak-tts@npm:^2.0.8":
+  version: 2.0.8
+  resolution: "speak-tts@npm:2.0.8"
+  checksum: 2/109a94ad1ab5077f0741707de6e627684139ba582e10e10b92d7f8015ee2dbe5e0680aef67730b45286bdaba0dc21660cd3889dcc64e807c4da4ff77d971c5e6
   languageName: node
   linkType: hard
 

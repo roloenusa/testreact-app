@@ -1,9 +1,29 @@
 // src/messages/message-view.js
 
 import React, { Component } from 'react';
+import Speech from 'speak-tts'
 import PropTypes from 'prop-types';
 
+const speech = new Speech()
+speech.init().then((data) => {
+    // The "data" object contains the list of available voices and the voice synthesis params
+    console.log("Speech is ready, voices are available", data)
+}).catch(e => {
+    console.error("An error occured while initializing : ", e)
+})
+
 class MessageView extends Component {
+
+  speak(text) {
+    speech.speak({
+        text,
+    }).then(() => {
+        console.log("Success !")
+    }).catch(e => {
+        console.error("An error occurred :", e)
+    })
+  }
+
   render() {
 
     const message = this.props.message;
@@ -21,6 +41,9 @@ class MessageView extends Component {
         <div className="message">
           <span className="label">Message: </span>
           <span className="value">{message.message}</span>
+        </div>
+        <div>
+          <button onClick={() => this.speak(message.message)} />
         </div>
       </div>
     )
