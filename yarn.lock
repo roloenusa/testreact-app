@@ -8635,6 +8635,8 @@ fsevents@^1.2.7:
     "@testing-library/jest-dom": ^4.2.4
     "@testing-library/react": ^9.5.0
     "@testing-library/user-event": ^7.2.1
+    mobx: ^5.15.4
+    mobx-react: ^6.2.0
     prop-types: ^15.7.2
     react: ^16.13.1
     react-dom: ^16.13.1
@@ -8883,6 +8885,35 @@ fsevents@^1.2.7:
   bin:
     mkdirp: bin/cmd.js
   checksum: 2/914b8b8b1c34128c06ddd41a1d33f1515f0dde80ba233e321385eedcd4cc71bc4a4b66c19c7fde708c3e7f22969403b371b81663761cff8b01a9a72c2b7bdd12
+  languageName: node
+  linkType: hard
+
+"mobx-react-lite@npm:2":
+  version: 2.0.3
+  resolution: "mobx-react-lite@npm:2.0.3"
+  peerDependencies:
+    mobx: ^4.0.0 || ^5.0.0
+    react: ^16.8.0
+  checksum: 2/ea943a1f5cbbe6bb23abed917f78a681f3ed9721e8b5a4b87ed8a49515eaa99693c84c2fd95639cbdb82dffc446c7c13a4d8ed8b0678a99eb1497d01357180d7
+  languageName: node
+  linkType: hard
+
+"mobx-react@npm:^6.2.0":
+  version: 6.2.0
+  resolution: "mobx-react@npm:6.2.0"
+  dependencies:
+    mobx-react-lite: 2
+  peerDependencies:
+    mobx: ^5.15.4 || ^4.15.4
+    react: ^16.8.0 || 16.9.0-alpha.0
+  checksum: 2/0dc602c30c7d444a1f9bb9d2e6f3d5b8855d93ce130d743bf4cfb0e2b77cb2496504597d341889666a37f471333f9008cf7bd441de43d97c174c0477b20f46e4
+  languageName: node
+  linkType: hard
+
+"mobx@npm:^5.15.4":
+  version: 5.15.4
+  resolution: "mobx@npm:5.15.4"
+  checksum: 2/4f34a46414e9f0c6f707b68d92224078da74c0796f1163d1b97a1534474d080e41ab7d0aff2636c975c5ccb5164bc265bf2c558c296dd1ca89315603a327edea
   languageName: node
   linkType: hard
 
