@@ -9,6 +9,7 @@ class App extends Component {
     return (
       <div>
         {/* <MessageList /> */}
+
         <WordList />
         <br />
         The sentence is: <SentenceView />
