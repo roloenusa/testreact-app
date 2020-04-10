@@ -1,8 +1,9 @@
 // src/messages/message-view.js
 
 import React, { Component } from 'react';
-import Speech from 'speak-tts'
+import Speech from 'speak-tts';
 import PropTypes from 'prop-types';
+import PrimaryButton from './../components/primary-button';
 
 const speech = new Speech()
 speech.init().then((data) => {
@@ -43,7 +44,9 @@ class MessageView extends Component {
           <span className="value">{message.message}</span>
         </div>
         <div>
-          <button onClick={() => this.speak(message.message)} />
+          <PrimaryButton onClick={() => this.speak(message.message)}>
+            Read
+          </PrimaryButton>
         </div>
       </div>
     )
