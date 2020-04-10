@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MessageList from './messages/message-list';
 import WordList from './sentence/word-list';
 import SentenceView from './sentence/sentence-view';
 
@@ -7,12 +6,11 @@ class App extends Component {
 
   render(){
     return (
-      <div>
-        {/* <MessageList /> */}
-
+      <div className="container">
         <WordList />
         <br />
-        The sentence is: <SentenceView />
+        <h2>The sentence is:</h2>
+        <SentenceView />
       </div>
     )
   }

@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Sentence from '.././sentence/sentence';
+import WordButton from './../components/word-button';
 
 class WordView extends Component {
 
@@ -12,13 +13,9 @@ class WordView extends Component {
   }
 
   render() {
-
     const word = this.props.word;
-
     return(
-      <div className="container">
-        <button onClick={() => this.add(word)}>{word}</button>
-      </div>
+        <WordButton onClick={() => this.add(word)}>{word}</WordButton>
     )
   }
 

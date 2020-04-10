@@ -24,10 +24,12 @@ class WordList extends Component {
         const wordViews = this.state.words.map((entry, index) => <WordView key={index} word={entry} />);
 
         return (
-            <div>
-                <h1>List of Words</h1>
+          <div>
+            <h1>List of Words</h1>
+            <div className='btn-group btn-group-toggle'>
                 { wordViews }
             </div>
+          </div>
         )
     }
 }

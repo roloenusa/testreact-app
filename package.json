@@ -12,7 +12,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "speak-tts": "^2.0.8"
+    "speak-tts": "^2.0.8",
+    "styled-components": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
